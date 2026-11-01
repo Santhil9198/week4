@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for Community Events Hub updates and activities.">
+  <meta name="theme-color" content="#15324b">
+  <title>Register | Community Events Hub</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315324b'/%3E%3Ctext x='32' y='45' font-size='42' text-anchor='middle' fill='white'%3EE%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #1d2935; background: #f4f7fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.6; }
+    header { background: #15324b; color: white; padding: 1.25rem max(1.25rem, calc((100% - 960px) / 2)); }
+    header h1 { margin: 0 0 .75rem; }
+    nav ul { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; list-style: none; margin: 0; padding: 0; }
+    nav a { color: white; font-weight: 600; }
+    nav a[aria-current="page"] { text-decoration-thickness: .2em; text-underline-offset: .25em; }
+    main { max-width: 960px; margin: 2rem auto; padding: 0 1.25rem; }
+    section, .panel { background: white; border-radius: .75rem; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 10px #15324b12; }
+    form { display: grid; gap: 1rem; max-width: 620px; }
+    label, legend { font-weight: 600; }
+    input, select, textarea, button { font: inherit; }
+    input:not([type="radio"]):not([type="checkbox"]), select, textarea { width: 100%; padding: .65rem; border: 1px solid #8796a5; border-radius: .35rem; margin-top: .25rem; }
+    fieldset { border: 1px solid #cbd5df; border-radius: .4rem; padding: .75rem 1rem; }
+    fieldset label { display: inline-flex; align-items: center; gap: .4rem; margin: .35rem 1rem .25rem 0; font-weight: 400; }
+    button { width: fit-content; padding: .65rem 1.2rem; border: 0; border-radius: .35rem; background: #15324b; color: white; font-weight: 700; cursor: pointer; }
+    footer { text-align: center; padding: 1rem; color: #526170; }
+    @media (max-width: 600px) { main { margin-top: 1rem; } section, .panel { padding: 1rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Community Events Hub</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html" aria-current="page">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Register</h2>
+      <p>Complete the form to sign up for community events. Fields marked required must be filled in.</p>
+      <form action="#" method="post">
+        <label for="name">Name
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </label>
+        <label for="email">Email
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </label>
+        <label for="password">Password
+          <input id="password" name="password" type="password" autocomplete="new-password" required>
+        </label>
+        <label for="event-date">Preferred event date
+          <input id="event-date" name="event-date" type="date">
+        </label>
+        <label for="phone">Phone
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </label>
+        <fieldset>
+          <legend>How would you like to participate?</legend>
+          <label><input type="radio" name="participation" value="attend" required> Attend an event</label>
+          <label><input type="radio" name="participation" value="volunteer"> Volunteer</label>
+        </fieldset>
+        <fieldset>
+          <legend>Topics of interest</legend>
+          <label><input type="checkbox" name="interests" value="arts"> Arts and culture</label>
+          <label><input type="checkbox" name="interests" value="outdoors"> Outdoors</label>
+          <label><input type="checkbox" name="interests" value="family"> Family activities</label>
+        </fieldset>
+        <label for="frequency">Email updates
+          <select id="frequency" name="frequency">
+            <option value="">Choose a frequency</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="event-only">Only about selected events</option>
+          </select>
+        </label>
+        <label for="message">Message
+          <textarea id="message" name="message" rows="5" placeholder="Tell us anything else we should know."></textarea>
+        </label>
+        <button type="submit">Submit registration</button>
+      </form>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 Community Events Hub</p></footer>
+</body>
+</html>
